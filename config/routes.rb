@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'pages#contact'
 
+  get 'home', to: 'pages#home'
+ 
+  get 'blogs', to: 'blogs#index'
   resources :blogs do
     member do
       get :toggle_status
