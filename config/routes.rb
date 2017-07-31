@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'pages#contact'
 
-  get 'home', to: 'pages#home'
+  get 'tech-news', to: 'pages#tech_news'
  
   get 'blogs', to: 'blogs#index'
   resources :blogs do
