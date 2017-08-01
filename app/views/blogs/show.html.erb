@@ -8,13 +8,13 @@
 
 
 <!-- start of comment form -->
-<%= render 'comments/comment_form' %>
-<!-- end of comment form -->
-
-<!-- start of comment -->
-<div id="comments data-blog-id="<%= @blog.id %>">
-  <%= render @blog.comments %>
-</div>
+  <%= render 'comments/comment_form' %>
+  <!-- end of comment form -->
+  
+  <!-- start of comment -->
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 <!-- end of comment -->
 </div>
 

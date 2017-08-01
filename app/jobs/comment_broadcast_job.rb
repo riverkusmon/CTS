@@ -1,4 +1,4 @@
-class CommentBroadcastJob < ActiveJob::Base
+class CommentBroadcastJob < ApplicationJob
   queue_as :default
   
   def perform(comment)
