@@ -5,7 +5,15 @@
       This is my blog area that tells you what i'm up to currently.
     </p>
   </div>
-
+  
+  <div class="side_bar_topics">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+    <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+  
+  
   <div class="col-sm-9 blog-sidebar">
     <div style="text-align: left">
       <h4>Elsewhere</h4>
