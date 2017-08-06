@@ -1,3 +1,4 @@
+
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
@@ -15,7 +16,7 @@ class BlogsController < ApplicationController
   def show
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
-    
+
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
