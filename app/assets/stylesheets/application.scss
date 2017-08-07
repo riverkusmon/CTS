@@ -210,18 +210,21 @@ body {
   }
   
   .tech-news {
-    color: black;
+    color: white;
     margin: 10px;
   }
   
   .tech-news a {
-    color: blue;
+    color: silver;
   }
   
-  .tech-news > .card {
+  .tech-news > .tech {
     padding: 10px;
   }
   
+   .tech-block {
+   text-align: left;
+  }
   
   
   
